@@ -1,0 +1,154 @@
+
+/* color: #2a4a74; */
+
+a{text-decoration: none; color: #ffffff;}
+
+body{margin: 0%; padding: 0%; direction: rtl; box-sizing: border-box; overflow-x:hidden; }
+
+.progressbar{
+    width: 0%;
+    height: 1vh;
+    background-image:linear-gradient(to right, #2a4a74,#e100ff,#ff00ff,#e100ff,#2a4a74);
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+}
+
+.navbar{width: 100%; background-color: #2a4a74; position: sticky; top: 0; z-index: 1000; padding: 2vh; text-align: center; box-shadow:  3px 3px 8px #000000;}
+
+.light{text-decoration: none; color: #ffffff; text-shadow: 3px 3px 8px #000000;}
+
+.light:after {
+    content: '';
+    top: 0;
+    transform: translateX(100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    animation: slide 4s infinite 3s;
+
+    /*
+    CSS Gradient - complete browser support from http://www.colorzilla.com/gradient-editor/
+    */
+    background: -moz-linear-gradient(left, #ff00ff00 0%,#ff00ffcc 50%, #ff00ff00 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ff00ff00)), color-stop(50%, #ff00ffcc), color-stop(100%, #ff00ff00); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, #ff00ff00 0%, #ff00ffcc 50%, #ff00ff00 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, #ff00ff00 0%, #ff00ffcc 50%, #ff00ff00 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, #ff00ff00 0%, #ff00ffcc 50%, #ff00ff00 100%); /* IE10+ */
+    background: linear-gradient(to right,#ff00ff00 0%, #ff00ffcc 50%, #ff00ff00 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#007db9e8', GradientType=1); /* IE6-9 */
+}
+
+/* animation */
+
+@keyframes slide {
+    0% {
+        transform: translateX(-150%);
+    }
+    100% {
+        transform: translateX(150%);
+    }
+}
+.one{width: 100%; color: #ffffff;display: block; box-sizing:border-box; }
+
+.div-img{width: 100%; position: relative; height: auto;}
+
+.div-text{position: absolute; right: 5%;top: 17%; width: 80%;}
+
+.Title1{padding:1% 16% 0 0;font-size: 50px; color: #ff00ff; text-shadow: 3px 3px 8px #000000;}
+
+.Title2{padding: 0 16% 0% 0; font-size: 28px;text-shadow: 3px 3px 8px #000000;}
+
+ul{padding:0% 2%;}
+li{padding: 0.5% 0;}
+
+.div2{width: 70%; box-sizing: border-box;margin: 5% 15%; padding: 2% ; font-size: 22px; text-align: justify;}
+
+.div2 h1 , .div4 h1{color: #2a4a74; text-shadow: 1px 1px 6px #ff00ff;}
+
+.div2 p ,.div2 ul{color: #2a4a74;}
+
+hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, #2a4a7400,#2a4a743a,#2a4a7480, #ff00ff,#2a4a7480,#2a4a743a,#2a4a7400);
+}
+
+.div3{background-color: #2a4a74; color: #ffffff; width: 100%;box-sizing: border-box;font-size: 22px; text-align: justify; text-shadow: 3px 3px 8px #000000;}
+.div3 div{width: 70%; margin: 0% 15%; padding: 2%;box-sizing: border-box;}
+
+.div3 div h1{text-shadow: 3px 3px 8px #000000;}
+
+.div3 .m1{width: 30%; margin: -5% 0% 4%; border-radius: 100% 100%; display: inline-block;box-sizing: border-box;text-align: center;}
+.div3 .m2{margin-right: 39%;}
+.m1 img{width: 50%; border-radius: 100% 100%;display: inline-block;margin: 0% 20%; box-shadow: 3px 3px 8px #000000;}
+.m1 a{text-align: center; text-shadow: 3px 3px 8px #000000;}
+
+.div4{width: 80%; margin: 5% 10% 15%; text-align: center; height:80vh;}
+
+.main{width: 100%; border-top: 1.5vh solid; border-image: linear-gradient(to right, #2a4a74,#e100ff,#ff00ff,#e100ff,#2a4a74) 10 round;}
+
+.div4 ul{padding: 0%; width: 100%;}
+.div4 li{color: #2a4a74; display: inline-block;width: 20%; margin:0% 1.5%; font-size: 32px; font-weight: bold;}
+
+.b1{width: 15%;height: 0vh; position: relative; right: -12.4%; background-image: linear-gradient(to left, #4a2a74 ,#cc00ff);top: 0vh; display: inline-block;
+    animation-name: animation1; animation-duration: 5s;animation-iteration-count: 1;animation-delay: 2s;animation-direction: normal;animation-timing-function:linear;animation-fill-mode: both;
+
+}
+
+.b2{display: inline-block;width: 15%;height: 0vh; position: relative; right: -4%; background-image: linear-gradient(to left, #cc00ff ,#ff00ff);top: 0vh;
+    animation-name: animation2; animation-duration: 5s;animation-iteration-count: 1;animation-delay: 2s;animation-direction: normal;animation-timing-function:linear;animation-fill-mode: both;
+}
+
+.b3{display: inline-block;width: 15%;height: 0vh; position: relative; right: 4%; background-image: linear-gradient(to right, #cc00ff ,#ff00ff);top: 0vh;
+animation-name: animation3; animation-duration: 5s;animation-iteration-count: 1;animation-delay: 2s;animation-direction: normal;animation-timing-function:linear;animation-fill-mode: both;
+}
+
+.b4{display: inline-block;width: 15%;height: 0vh; position: relative; right: 12.4%; background-image: linear-gradient(to right, #4a2a74 ,#cc00ff);top: 0vh;
+animation-name: animation4; animation-duration: 5s;animation-iteration-count: 1;animation-delay: 2s;animation-direction: normal;animation-timing-function:linear;animation-fill-mode: both;
+}
+
+
+
+
+@keyframes animation1{
+    0%{height: 0vh; top: 0vh;}
+    50%{height: 10vh;top: -15vh;}
+    100%{height: 20vh;top: -30vh;}
+}
+
+@keyframes animation2{
+    0%{height: 0vh;top: 0vh;}
+    50%{height: 20vh;top: -6vh;}
+    100%{height: 30vh;top: -20vh;}
+}
+
+@keyframes animation3{
+    0%{height: 0vh;}
+    50%{height: 25vh;}
+    100%{height: 50vh;}
+}
+
+@keyframes animation4{
+    0%{height: 0vh;}
+    50%{height: 25vh;}
+    100%{height: 50vh;}
+}
+
+.site1{width: 100%;height: 80vh;position: relative;}
+
+.site1-1{position: absolute; left: 10%; right: 30%; width: 60%; height: 80vh;}
+.site2{position: absolute; right: 10%; top: 30vh;width: 30%;height: 50vh;}
+.site2-2{width: 100%; height: 50vh;}
+
+footer{width: 100%; margin-top: 10%;background-color: #2a4a74;}
+.foot{ width: 100%;font-size: 22px; color: #ffffff;text-shadow: 3px 3px 8px #000000;}
+.foot ul{margin-right: 5%;padding: 5%;}
+.foot li{margin-top: 2%;}
+
+
+
+
+
+
